@@ -1,73 +1,77 @@
 USER_SETTINGS
-user_email (pid)
+user_email             (pid)
 user_first_name
 user_last_name
 user_photo_dir
 user_password
-user_sq_id
+user_sq_id             (fid)
 user_sq_answer
 nickname
 
 SECURITY_QUESTIONS (SQ)
-sq_id (pid)
+sq_id                  (pid)
 sq_question
 
 TRANSPORT (TRAN)
-tran_id (pid)
-user_id (fid)
-tran_rec_date
-tran_car_dist
-tran_fuel_type
-tran_fuel_efficency
-tran_train_dist
-tran_bus_dist
-tran_plane_dist
-tran_motorcycle_dist
+tran_id                (pid)
+user_id                (fid)
+tran_rec_date          (mm/dd/yy)
+tran_car_dist          (miles)
+tran_fuel_type         
+tran_fuel_efficency    (mpg)
+tran_train_dist        (miles)
+tran_bus_dist          (miles)
+tran_plane_dist        (miles)
+tran_motorcycle_dist   (miles)
 
 HOUSING (H)
-h_id (pid)
-user_id (fid)
-h_rec_date
-h_electric
-h_fuel
-h_gas
-h_gas_units
-h_water
+h_id                   (pid)
+user_id                (fid)
+h_rec_date             (mm/dd/yy)
+h_electric             (kw)
+h_fuel                 (gal)
+h_gas                  
+h_gas_units            
+h_water                (gal)
+
+UNITS
+unit_id
+unit_name
 
 FOOD
-food_id (pid)
-user_id (fid)
-food_rec_date
-food_meat
-food_poultry
-food_seafood
-food_milk
-food_vegi
-food_drinks
+food_id                 (pid)
+user_id                 (fid)
+food_rec_date           (mm/dd/yy)
+food_meat               (lbs)
+food_poultry            (lbs)
+food_seafood            (lbs)
+food_milk               (l)
+food_vegi               (lbs)
+food_drinks             (l)
 
 SHOPPING (SHOP)
-shop_id (id)
-user_id (fid)
-shop_rec_date
-shop_cloths
-shop_furnature
-shop_health_care
-shop_vehicle
-shop_house_maintenance
+shop_id                 (pid)
+user_id                 (fid)
+shop_rec_date           (mm/dd/yy)
+shop_cloths             ($)
+shop_furnature          ($)
+shop_health_care        ($)
+shop_vehicle            ($)
+shop_house_maintenance  ($)
 
 TREE_SETTINGS
-tree_id (pid)
-user_id (fid)
+tree_id                 (pid)
+user_id                 (fid)
 tree_species_name
 tree_location_name
 tree_latitude
 tree_longitude
-tree_date_planted
-tree_diameter
-tree_photo_dir
+tree_date_planted       (mm/dd/yy)
+tree_diameter           (cm)
+tree_photo_dir         
 
 GEN_TREE_INFO (TREE_INFO)
-tree_info_plots
+tree_info_plots         ((x_1,y_1),(x_2,y_2),...,(x_n,y_n))
 tree_info_discription
 
 
